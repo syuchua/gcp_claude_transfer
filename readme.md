@@ -19,8 +19,8 @@
 ### 第一步：克隆仓库
 
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/syuchua/gcp_claude_transfer.git
+cd gcp_claude_transfer
 ```
 
 ### 第二步：安装依赖
