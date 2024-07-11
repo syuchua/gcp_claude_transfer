@@ -18,7 +18,7 @@ app.secret_key = secrets.token_hex(16)  # 生成一个安全的随机密钥
 
 # 设置环境变量以允许不安全的传输
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-SERVICE_ACCOUNT_FILE = 'C:\\Users\\yuchu\\Downloads\\circular-maxim-427411-v7-afb6364a75b3.json'
+SERVICE_ACCOUNT_FILE = 'C:\\path\\to\\your\\service_account.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = SERVICE_ACCOUNT_FILE
 
 API_KEYS_FILE = './api_keys.json'
