@@ -77,7 +77,7 @@ def proxy():
     api_key = request.headers.get('API-Key') or request.headers.get('Authorization')
     if api_key and api_key.startswith('Bearer '):
         api_key = api_key.split(' ')[1]  # 提取真正的密钥
-    app.logger.info("Received API key: %s", api_key)
+    logger.info("Received API key: %s", api_key)
     if not validate_api_key(api_key):
         logger.error("Invalid API key received: %s", api_key)
         return jsonify({"error": "Invalid API key"}), 403
